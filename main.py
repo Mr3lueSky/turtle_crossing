@@ -8,7 +8,7 @@ screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
 
-
+scoreboard = Scoreboard()
 player = Player()
 cars = CarManager()
 
@@ -21,5 +21,4 @@ i=0
 while game_is_on:
     time.sleep(0.1)
     cars.move_fwd()
-
     screen.update()
