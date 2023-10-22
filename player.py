@@ -10,13 +10,16 @@ class Player(Turtle):
         self.penup()
         self.shape("turtle")
         self.rt(-90)
-        self.goto(STARTING_POSITION)
+        self.reset()
 
     def move_forward(self):
         self.fd(MOVE_DISTANCE)
 
     def move_backward(self):
         self.fd(-MOVE_DISTANCE)
+
+    def reset(self):
+        self.goto(STARTING_POSITION)
 
 
 

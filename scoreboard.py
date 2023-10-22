@@ -10,4 +10,12 @@ class Scoreboard(Turtle):
         self.ht()
         self.goto(-280,250)
         self.color("black")
+        self.update_scoreboard()
+
+    def update_scoreboard(self):
         self.write(arg="Level: " + str(self.level), font=FONT)
+
+    def level_up(self):
+        self.level += 1
+        self.clear()
+        self.update_scoreboard()
